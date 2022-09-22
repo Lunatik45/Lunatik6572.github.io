@@ -27,13 +27,14 @@ html {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	font-size: 24pt;
+	text-shadow: 2px 2px 4px #333;
 }
 
 section {
 	margin-left: 5%;
 	margin-right: 5%;
 	margin-top: 0;
-	margin-bottom: 5%;
+	margin-bottom: 10%;
 	display: grid;
 	place-items: center;
 	align-content: center;
