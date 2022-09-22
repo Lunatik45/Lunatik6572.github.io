@@ -19,6 +19,10 @@
 		// for UI elements on the page.
 		console.log("Window loaded!");
 		document.getElementById("encrypt-it").addEventListener("click", handleClick);
+		document.getElementById("reset").addEventListener("click", resetText);
+		document.getElementById("large-text-size").addEventListener("click", changeFont);
+		document.getElementById("default-text-size").addEventListener("click", changeFont);
+		document.getElementById("all-caps").addEventListener("change", capitalize);
 	}
 
 	// Add any other functions in this area (you should not implement your
@@ -40,5 +44,33 @@
 			}
 		}
 		return splitTxt.join("");
+	}
+
+	function capitalize() {
+		const result = document.getElementById("result");
+		if (document.getElementById("all-caps").checked)
+		{
+			result.innerText = result.innerText.toUpperCase();
+		} else {
+			result.innerText = result.innerText.toLowerCase();
+		}
+	}
+
+	function changeFont() {
+		if (document.getElementById("default-text-size").checked)
+		{
+			document.getElementById("result").style.fontSize = "12pt";
+		} else {
+			document.getElementById("result").style.fontSize = "24pt";
+		}
+	}
+
+	function resetText() {
+		document.getElementById("input-text").value = "";
+		document.getElementById("result").innerText = "";
+		document.getElementById("result").style.fontSize = "12pt";
+		document.getElementById("default-text-size").checked = true;
+		document.getElementById("all-caps").checked = false;
+		document.getElementById("cipher-type").value="shift";
 	}
 })();
