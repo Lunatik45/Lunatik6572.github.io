@@ -1,22 +1,39 @@
 <!DOCTYPE html>
 <html lang="en-US">
 
-	<head>
-		<meta charset="UTF-8">
-		<!--<link rel="stylesheet" href="css_test.css">-->
-	</head>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script defer src="index.js"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
 
-	<body>
-		<h1>Links to my works for 196W</h1>
+<body>
+	<div class="hero-image">
+		<div class="hero-text">
+			<h1>Eric's CSC 196W Projects</h1>
+		</div>
+	</div>
+	<section class="hidden">
+		<h1>Links to my projects for CSC 196W</h1>
 		<p>
-			<a href="/about_me/about_me.html">About me</a>
+			The links in this page go to the work I've done in my CSC 196W class. Some projects have been modified past
+			the submission requirements for testing and exploring JavaScript and its abilities.
 		</p>
-		<p>
-			<a href="/fun_js/fancifymytext.html">Fun with Javascript</a>
-		</p>
-		<p>
-			<a href="/encrypt_it/encrypt-it.html">Encrypt it!</a>
-		</p>
-	</body>
+	</section>
+
+	<section class="hidden">
+		<h1>About me:</h1>
+		<button id="about-me" onclick="window.location.href='about_me/about_me.html';"></button>
+	</section>
+	<section class="hidden">
+		<h1>Fun with Javascript:</h1>
+		<button id="fancify" onclick="window.location.href='fun_js/fancifymytext.html'"></button>
+	</section>
+	<section class="hidden">
+		<h1>Encrypt it:</h1>
+		<button id="encrypt-it" onclick="window.location.href='encrypt_it/encrypt-it.html'"></button>
+	</section>
+</body>
 
 </html>
