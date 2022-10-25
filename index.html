@@ -1,7 +1,11 @@
+<!-- linthtml-configure line-end-style=false -->
+<!-- linthtml-configure indent-width=false -->
+
 <!DOCTYPE html>
 <html lang="en-US">
 
 <head>
+	<title>Lunatik6572</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script defer src="index.js"></script>
@@ -9,8 +13,8 @@
 </head>
 
 <body>
-	<div class="hero-image">
-		<div class="hero-text">
+	<div class="hero_image">
+		<div class="hero_text">
 			<h1>Eric's CSC 196W Projects</h1>
 		</div>
 	</div>
@@ -23,20 +27,25 @@
 	</section>
 
 	<section class="hidden">
+		<h1>Site settings:</h1>
+		<p>Background color (hex, no '#'): <textarea cols="6" rows="1" maxlength="6" class="bg_area" id="bg_color"></textarea> <button class="bg_btn" id="apply_bg_btn">Apply</button> <button class="bg_btn" id="reset_bg_btn">Reset</button></p>
+	</section>
+
+	<section class="hidden">
 		<h1>About me:</h1>
-		<button id="about-me" onclick="window.location.href='about_me/about_me.html';"></button>
+		<button class="site_btn" id="about_me" onclick="window.location.href='about_me/about_me.html';"></button>
 	</section>
 	<section class="hidden">
 		<h1>Fun with Javascript:</h1>
-		<button id="fancify" onclick="window.location.href='fun_js/fancifymytext.html'"></button>
+		<button class="site_btn" id="fancify" onclick="window.location.href='fun_js/fancifymytext.html'"></button>
 	</section>
 	<section class="hidden">
 		<h1>Encrypt it:</h1>
-		<button id="encrypt-it" onclick="window.location.href='encrypt_it/encrypt-it.html'"></button>
+		<button class="site_btn" id="encrypt_it" onclick="window.location.href='encrypt_it/encrypt-it.html'"></button>
 	</section>
 	<section class="hidden">
 		<h1>Ajax Pets:</h1>
-		<button id="ajax" onclick="window.location.href='ajaxpets/ajaxpets.html'"></button>
+		<button class="site_btn" id="ajax" onclick="window.location.href='ajaxpets/ajaxpets.html'"></button>
 	</section>
 </body>
 
